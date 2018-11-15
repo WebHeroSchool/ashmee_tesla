@@ -3,23 +3,25 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Tesla</title>
+    <title>Tesla Inc.</title>
     <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 <header class="header">
-    <nav class="menu">
+    <img class="header__image" alt="tesla-logo" src="images/Tesla_logo.png"/>
+    <nav class="header__menu">
         <a class="menu__link" href="#">Model S</a>
         <a class="menu__link" href="#">Model X</a>
         <a class="menu__link" href="#">Model 3</a>
         <a class="menu__link" href="#">Roadster</a>
         <a class="menu__link" href="#">Energy</a>
     </nav>
-    <nav class="menu menu__side">
-        <a class="menu__link" href="#">Магазин</a>
-        <a class="menu__link" href="#">Войти</a>
-        <a class="menu__link" href="#"></a>
+    <nav class="header__menu--side">
+        <a class="menu__link--side" href="#">Магазин</a>
+        <a class="menu__link--side" href="#">Войти</a>
+        <a class="menu__link--side" href="#"><img src="images/menu.png" alt="menu" class="menu__image"></a>
     </nav>
 </header>
 
@@ -28,31 +30,43 @@
     <h1 class="section-main__title">Model S</h1>
     <p class="section-main__text">Добро пожаловать в будущее!</p>
 
-    <img class="section-main__image" alt="Car Tesla full" />
+    <img class="section-main__image" alt="Car Tesla full" src="images/Tesla_main.png"/>
     <div class="specifications">
+
         <div class="specifications__speed">
-            <p>2,7 <span>сек</span></p>
-            <p>0-100 км/час</p>
+            <img src="images/Speed.svg" alt="Speed" class="specifications__image--speed" draggable=false>
+            <div class="specifications__integer">2,7 <span class="specifications__measure">сек</span>
+            </div>
+            <div class="specifications__description">0-100 км/час</div>
         </div>
+
         <div class="specifications__road">
-            <p>632 <span>км</span></p>
-            <p>запас хода</p>
+            <img src="images/Road_icon.svg" alt="Road icon" class="specifications__image--Road_icon">
+            <div class="specifications__integer">632 <span class="specifications__measure">км</span></div>
+            <div class="specifications__description">запас хода</div>
         </div>
 
+        <div class="specifications__button-test">
+            <img src="images/steering_wheel.svg" alt="steering wheel" class="specifications__image--steering">
+            <button class="button button--transparent">ТЕСТ ДРАЙВ</button>
+        </div>
+
+        <div class="specifications__button-order">
+            <button class="button button--white">ЗАКАЗАТЬ</button>
+        </div>
     </div>
-
-    <button class="button button--transparent">Тест драйв</button>
-
-    <button class="button button--white">Заказать</button>
 
 </section>
 
 
 <section class="section-middle">
     <h2 class="section-middle__title-primary">Model S</h2>
-    <img class="section-middle__image" alt="Car interior" />
+    <img class="section-middle__image" alt="Car interior"/>
     <h3 class="section-middle__title-secondary">Будущее вождения</h3>
-    <p class="section-middle__text">Модель S обладает лучшей в своем классе вместимостью: в машине поместится до пяти взрослых и двух детей. Оснащена современным 17-дюймовым сенсорным экраном. Усовершенствованная шумовая инженерия создает динамику звука, сравнимую с студией звукозаписи, а стеклянная крыша обеспечивает просторный интерьер для каждого пассажира.
+    <p class="section-middle__text">Модель S обладает лучшей в своем классе вместимостью: в машине поместится до пяти
+        взрослых и двух детей. Оснащена современным 17-дюймовым сенсорным экраном. Усовершенствованная шумовая инженерия
+        создает динамику звука, сравнимую с студией звукозаписи, а стеклянная крыша обеспечивает просторный интерьер для
+        каждого пассажира.
     </p>
 
     <button class="button button--transparent">узнать больше</button>
@@ -64,7 +78,9 @@
 
     <h3 class="section-last__title">Самый безопасный
         автомобиль в мире</h3>
-    <p class="section-last__text">Модель S достигла наивысшей оценки безопасности любого автомобиля, когда-либо испытанного, и установила рекорд по наименьшей вероятности травмы пассажиров - от несчастных случаев на переднем, боковом, заднем сидении и в ДТП с переворотом авто.</p>
+    <p class="section-last__text">Модель S достигла наивысшей оценки безопасности любого автомобиля, когда-либо
+        испытанного, и установила рекорд по наименьшей вероятности травмы пассажиров - от несчастных случаев на
+        переднем, боковом, заднем сидении и в ДТП с переворотом авто.</p>
 
 
     <h3 class="section-last__title">Оценка защиты: </h3>
@@ -75,15 +91,14 @@
     <p>Пассажир</p>
 
 
-
-    <p > 5 звезд</p>
+    <p> 5 звезд</p>
     <p>Безопасности</p>
 
 
     <button class="button button--transparent">узнать больше</button>
     <button class="button button--red">Заказать</button>
 
-    <img class="section-last__image" alt="Car frame" />
+    <img class="section-last__image" alt="Car frame"/>
 
 
     Защита от удара спереди

@@ -1,0 +1,206 @@
+.header {
+    height: 51px;
+    border: 1px solid black;
+    min-width: 377px;
+    max-width: 1514px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    margin: 44px auto;
+}
+
+.menu__link {
+    font-family: Montserrat, serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    font-size: 15px;
+    text-decoration: none;
+    color: #000000;
+    margin: 0 0 0 4%;
+
+}
+
+.menu__link--side {
+    font-family: Montserrat, serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    font-size: 15px;
+    text-decoration: none;
+    color: #000000;
+    margin: 10px 10px auto;
+
+}
+
+.header__image {
+    margin: auto;
+    visibility: visible;
+}
+
+.header__menu {
+    flex: 1;
+    text-align: center;
+}
+
+.header__menu--side {
+    text-align: center;
+
+}
+
+.section-main {
+    font-family: Montserrat, serif;
+    border: 1px solid black;
+    min-width: 376px;
+    max-width: 1514px;
+    display: flex;
+    flex-direction: column;
+    margin: 44px auto;
+    font-style: normal;
+    line-height: normal;
+}
+
+.section-main__title {
+    text-align: center;
+    font-weight: 600;
+    line-height: normal;
+    font-size: 90px;
+    color: #000000;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.section-main__text {
+    text-align: center;
+    font-weight: 500;
+    font-size: 15px;
+    color: #000000;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+
+.section-main__image {
+    margin: 0 auto;
+    max-width: 100%;
+    border: 1px solid black;
+}
+
+.specifications {
+    margin: 0 0 60px 100px;
+    padding: 5% 0;
+    min-width: 377px;
+    max-width: 100%;
+}
+
+.specifications__speed {
+    display: inline-block;
+    width: 10%;
+    padding: 13px 50px;
+    white-space: nowrap;
+    border: 1px solid;
+}
+
+.specifications__image--speed {
+    width: 46px;
+    height: 35px;
+    float: left;
+    margin: 10px 5px 0 0;
+}
+
+.specifications__integer {
+    font-weight: 600;
+    font-size: 35px;
+    margin: 2px 0 0;
+}
+
+.specifications__measure {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.specifications__road {
+    display: inline-block;
+    width: 10%;
+    padding: 13px 50px;
+    white-space: nowrap;
+    border: 1px solid;
+}
+
+.specifications__image--Road_icon {
+    width: 46px;
+    height: 35px;
+    float: left;
+    margin: 10px 5px 0 0;
+}
+
+.specifications__image--steering {
+    width: 22px;
+    height: 22px;
+    float: left;
+    margin: 5px -20px 0 0;
+}
+
+
+.specifications__description {
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.button {
+    width: 160px;
+    height: 40px;
+    font-weight: 600;
+    font-size: 13px;
+
+    background: transparent no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+
+}
+
+.specifications__button-test {
+    display: inline-block;
+    width: 10%;
+    padding: 13px 50px;
+    white-space: nowrap;
+    border: 1px solid;
+}
+
+.specifications__button-test:hover button {
+    color:red;
+}
+
+
+.specifications__button-order {
+    display: inline-block;
+    width: 10%;
+    padding: 13px 50px;
+    white-space: nowrap;
+    border: 1px solid;
+
+
+}
+
+.button--white {
+    background-color: white;
+    border: 2px solid #E51937;
+}
+
+.button--white:hover {
+    background-color: #E51937;
+    color: white;
+}
+
+.button--transparent {
+
+}
+
+@media screen and (max-width: 768px) {
+    .menu__image {
+        display: none;
+    }
+}
+
+
