@@ -1,12 +1,16 @@
 .header {
     height: 51px;
-    border: 1px solid black;
     min-width: 377px;
-    max-width: 1514px;
+    max-width: 1340px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     display: flex;
-    margin: 44px auto;
+    margin: 34px auto;
+}
+
+.header__image {
+    margin: auto;
+    visibility: visible;
 }
 
 .menu__link {
@@ -18,7 +22,13 @@
     text-decoration: none;
     color: #000000;
     margin: 0 0 0 4%;
+}
 
+.menu__link:hover {
+    border-bottom: 3px solid black;
+    border-color: #E51937;
+    border-radius: 4px;
+    color: #E51937;
 }
 
 .menu__link--side {
@@ -30,12 +40,14 @@
     text-decoration: none;
     color: #000000;
     margin: 10px 10px auto;
-
 }
 
-.header__image {
-    margin: auto;
-    visibility: visible;
+.menu__link--side:hover {
+    color: #E51937;
+}
+
+.menu__link--side-mobile {
+    display: none;
 }
 
 .header__menu {
@@ -45,17 +57,33 @@
 
 .header__menu--side {
     text-align: center;
+}
 
+.menu__image {
+
+}
+
+@media screen and (max-width: 768px) {
+    .menu__link--side {
+        display: none;
+    }
+
+    .menu__link--side-mobile {
+        display: inline;
+    }
+
+    .header__menu {
+        visibility: hidden;
+    }
 }
 
 .section-main {
     font-family: Montserrat, serif;
-    border: 1px solid black;
     min-width: 376px;
-    max-width: 1514px;
+    max-width: 1440px;
     display: flex;
     flex-direction: column;
-    margin: 44px auto;
+    margin: 3% auto;
     font-style: normal;
     line-height: normal;
 }
@@ -66,38 +94,36 @@
     line-height: normal;
     font-size: 90px;
     color: #000000;
-    margin: 0 auto;
-    border: 1px solid black;
+    margin: -5px auto -1%;
 }
 
 .section-main__text {
     text-align: center;
     font-weight: 500;
     font-size: 15px;
+    line-height: 12px;
     color: #000000;
-    border: 1px solid black;
     margin: 0 auto;
 }
 
 .section-main__image {
-    margin: 0 auto;
+    margin: -9% auto 1px;
     max-width: 100%;
-    border: 1px solid black;
 }
 
 .specifications {
-    margin: 0 0 60px 100px;
+    display: flex;
+    margin: -2% 22% 60px 22%;
     padding: 5% 0;
     min-width: 377px;
     max-width: 100%;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
 }
 
 .specifications__speed {
-    display: inline-block;
-    width: 10%;
-    padding: 13px 50px;
-    white-space: nowrap;
-    border: 1px solid;
+    width: 150px;
 }
 
 .specifications__image--speed {
@@ -119,29 +145,25 @@
 }
 
 .specifications__road {
-    display: inline-block;
-    width: 10%;
-    padding: 13px 50px;
-    white-space: nowrap;
-    border: 1px solid;
+    width: 150px;
 }
 
 .specifications__image--Road_icon {
-    width: 46px;
-    height: 35px;
+    width: 30px;
+    height: 50px;
     float: left;
-    margin: 10px 5px 0 0;
+    margin: 10px 0 0 0;
 }
 
 .specifications__image--steering {
     width: 22px;
     height: 22px;
     float: left;
-    margin: 5px -20px 0 0;
+    margin: 5px -30px 0 0;
 }
 
-
 .specifications__description {
+    padding-left: 15%;
     font-weight: normal;
     font-size: 12px;
 }
@@ -151,36 +173,29 @@
     height: 40px;
     font-weight: 600;
     font-size: 13px;
-
     background: transparent no-repeat;
     border: none;
-    cursor:pointer;
+    cursor: pointer;
     overflow: hidden;
-    outline:none;
-
+    outline: none;
 }
 
 .specifications__button-test {
-    display: inline-block;
-    width: 10%;
-    padding: 13px 50px;
-    white-space: nowrap;
-    border: 1px solid;
+    padding: 13px 0 0 0;
+    width: 160px;
 }
 
 .specifications__button-test:hover button {
-    color:red;
+    color: red;
 }
 
+.specifications__button-test:hover .specifications__image--steering {
+    content: url('images/steering_wheel-red.svg');
+}
 
 .specifications__button-order {
-    display: inline-block;
-    width: 10%;
-    padding: 13px 50px;
-    white-space: nowrap;
-    border: 1px solid;
-
-
+    width: 160px;
+    padding: 13px 0 0 0;
 }
 
 .button--white {
@@ -198,9 +213,72 @@
 }
 
 @media screen and (max-width: 768px) {
-    .menu__image {
-        display: none;
+    .section-main__title {
+        line-height: 110px;
+        font-size: 61px;
     }
+
+    .section-main__text {
+        line-height: 10px;
+        font-size: 12px;
+    }
+
+    .specifications {
+        display: flex;
+        margin: -2% 5% 60px;
+        padding: 5% 0;
+        min-width: 340px;
+        max-width: 100%;
+        justify-content: flex-start;
+        align-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+
+    .specifications__speed {
+        width: 150px;
+    }
+
+    .specifications__image--speed {
+        width: 46px;
+        height: 35px;
+        float: left;
+        margin: 10px 5px 0 0;
+    }
+
+    .specifications__integer {
+        font-size: 27px;
+    }
+
+    .specifications__measure {
+        font-size: 15px;
+    }
+
+    .specifications__road {
+        width: 150px;
+    }
+
+    .specifications__image--Road_icon {
+        width: 25px;
+        height: 41px;
+    }
+
+    .specifications__image--steering {
+        width: 22px;
+        height: 22px;
+        float: left;
+        margin: 5px -30px 0 0;
+    }
+
+    .specifications__description {
+        padding-left: 15%;
+        font-weight: normal;
+        font-size: 10px;
+    }
+
+
+
+
 }
 
 
