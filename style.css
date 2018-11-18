@@ -64,6 +64,13 @@
 }
 
 @media screen and (max-width: 768px) {
+    .header {
+        min-width: 330px;
+        max-width: 100%;
+       
+    }
+
+
     .menu__link--side {
         display: none;
     }
