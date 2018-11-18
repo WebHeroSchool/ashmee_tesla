@@ -67,9 +67,7 @@
     .header {
         min-width: 330px;
         max-width: 100%;
-       
     }
-
 
     .menu__link--side {
         display: none;
@@ -219,7 +217,7 @@
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 668px) {
     .section-main__title {
         line-height: 110px;
         font-size: 61px;
@@ -228,6 +226,11 @@
     .section-main__text {
         line-height: 10px;
         font-size: 12px;
+        margin: -5% auto;
+    }
+
+    .section-main__image {
+    margin: 0 auto 1px;
     }
 
     .specifications {
@@ -236,11 +239,10 @@
         padding: 5% 0;
         min-width: 340px;
         max-width: 100%;
-        justify-content: flex-start;
-        align-content: flex-start;
+        justify-content: center;
+        align-content: center;
         flex-wrap: wrap;
     }
-
 
     .specifications__speed {
         width: 150px;
@@ -250,7 +252,7 @@
         width: 46px;
         height: 35px;
         float: left;
-        margin: 10px 5px 0 0;
+        margin: 8px 6px 0 -5px;
     }
 
     .specifications__integer {
@@ -268,13 +270,14 @@
     .specifications__image--Road_icon {
         width: 25px;
         height: 41px;
+        margin: 10px 5px 0 -5px;
     }
 
     .specifications__image--steering {
         width: 22px;
         height: 22px;
         float: left;
-        margin: 5px -30px 0 0;
+        margin: 7px -30px 0 7px;
     }
 
     .specifications__description {
@@ -282,9 +285,6 @@
         font-weight: normal;
         font-size: 10px;
     }
-
-
-
 
 }
 
