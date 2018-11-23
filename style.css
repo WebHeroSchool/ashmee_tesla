@@ -127,10 +127,6 @@
     flex-wrap: wrap;
 }
 
-.specifications__speed {
-    width: 150px;
-}
-
 .specifications__image--speed {
     width: 46px;
     height: 35px;
@@ -149,7 +145,7 @@
     font-size: 20px;
 }
 
-.specifications__road {
+.specifications__block {
     width: 150px;
     margin: 0 2px 0 0;
 }
@@ -242,7 +238,7 @@
         flex-wrap: wrap;
     }
 
-    .specifications__speed {
+    .specifications__block {
         width: 150px;
     }
 
@@ -259,10 +255,6 @@
 
     .specifications__measure {
         font-size: 15px;
-    }
-
-    .specifications__road {
-        width: 150px;
     }
 
     .specifications__image--Road_icon {
@@ -286,7 +278,7 @@
 
 }
 
-.navigation {
+.scroll-bottom {
     text-align: center;
 }
 
