@@ -59,9 +59,6 @@
     text-align: center;
 }
 
-.menu__image {
-
-}
 
 @media screen and (max-width: 768px) {
     .header {
@@ -94,12 +91,13 @@
 }
 
 .section-main__title {
+    height: 105px;
     text-align: center;
     font-weight: 600;
     line-height: normal;
     font-size: 90px;
     color: #000000;
-    margin: -5px auto -1%;
+    margin: 0 auto 0;
 }
 
 .section-main__text {
@@ -108,7 +106,7 @@
     font-size: 15px;
     line-height: 12px;
     color: #000000;
-    margin: 1% auto;
+    margin: 0 auto 1% auto;
 }
 
 .section-main__image {
@@ -118,13 +116,16 @@
 
 .specifications {
     display: flex;
-    margin: -2% 22% 0 22%;
-    padding: 5% 0;
+    margin-top: 2%;
+    margin-left: 20%;
+    margin-bottom: 3%;
     min-width: 377px;
-    max-width: 100%;
+    max-width: 60%;
+    width: 60%;
     justify-content: space-around;
     align-content: center;
     flex-wrap: wrap;
+
 }
 
 .specifications__image--speed {
@@ -158,10 +159,9 @@
 }
 
 .specifications__image--steering {
-    width: 22px;
-    height: 22px;
-    float: left;
-    margin: 8px -30px 0 0;
+    position: relative;
+    top: 5px;
+    margin-right: 5px;
 }
 
 .specifications__description {
@@ -180,21 +180,38 @@
     cursor: pointer;
     overflow: hidden;
     outline: none;
+    align-self: center;
 }
 
 .specifications__button-test {
-    padding: 13px 0 0 0;
-    margin: 0 -5% 0 0;
+    padding: 0;
+    margin: 0;
     width: 160px;
+    align-self: center;
 }
 
 .specifications__button-test:hover button {
     color: red;
 }
 
-.specifications__button-test:hover .specifications__image--steering {
-    content: url('images/steering_wheel-red.svg');
+/*.specifications__button-test:hover svg .specifications__image--steering {*/
+    /*content: url('images/steering_wheel-red.svg');*/
+/*}*/
+
+.specifications__button-test:hover button svg {
+    color: red;
 }
+
+.button:hover svg #knowmore-circle {
+    fill: white;
+}
+
+.button--transparent:hover svg #knowmore-path {
+    fill: #E51937;
+}
+
+
+
 
 .specifications__button-order {
     width: 160px;
@@ -263,19 +280,11 @@
         margin: 10px 5px 0 -5px;
     }
 
-    .specifications__image--steering {
-        width: 22px;
-        height: 22px;
-        float: left;
-        margin: 7px -30px 0 7px;
-    }
-
     .specifications__description {
         padding-left: 15%;
         font-weight: normal;
         font-size: 10px;
     }
-
 }
 
 .scroll-bottom {
@@ -293,10 +302,12 @@
     margin: 3% auto 0 auto;
     font-style: normal;
     line-height: normal;
+    background-size: 88%;
+    /* свернул всё в background
     background-image: url('images/Tesla__middle.png');
     background-repeat: no-repeat;
-    background-size: 88%;
-    background-position: bottom left;
+    background-position: bottom left; */
+    background: url('images/Tesla__middle.png') no-repeat bottom left;
 }
 
 .section-middle__mobile {
@@ -307,7 +318,7 @@
     font-weight: 600;
     font-size: 70px;
     color: #E51937;
-    margin: 0 auto 0 0;
+    margin: 2% auto 0 6%;
 }
 
 .section-middle__block {
@@ -358,30 +369,33 @@
 
 .section-middle__buttons {
     margin: 20% 0 0 0;
-
 }
 
-.specifications__image--knowmore {
-    float: left;
-    margin: -2% 0 0;
-    padding-left: -10px;
-}
 
 .button--transparent {
     color: #FFFFFF;
-    margin: auto 0 0;
-    padding-right: 15px;
-
+    margin: auto 10px 0;
+    align-self: flex-end;
 }
 
-.button--transparent:hover img {
-    content: url("images/knowmore-active.svg");
+.svg-knowmore {
+    position: relative;
+    top: 6px;
+    margin-right: 5px;
+}
+
+.button--transparent:hover svg #knowmore-circle {
+    fill: white;
+}
+
+.button--transparent:hover svg #knowmore-path {
+    fill: #E51937;
 }
 
 .button--red {
     color: #FFFFFF;
     border: 2px solid #FFFFFF;
-    margin: -2% 0 0;
+    margin: auto 8px 0;
 }
 
 .button--red:hover {
@@ -524,10 +538,6 @@
     font-size: 25px;
 }
 
-.section-last__buttons {
-    margin: 0 5% 0 5%;
-}
-
 .section-last__car-name {
     z-index: 1;
     max-width: 791px;
@@ -623,14 +633,11 @@
     }
 
     .section-last__car-name {
-        z-index: 1;
         max-width: 600px;
         max-height: 260px;
         min-height: 200px;
         width: 101%;
-        height: auto;
         margin: 6% 0 -20% 0;
-
     }
 
     .section-last__car-frame {
@@ -638,11 +645,8 @@
         max-width: 800px;
         max-height: 420px;
         min-height: 204px;
-        width: 100%;
-        height: auto;
         margin-left: auto;
         margin-right: auto;
-        z-index: 999;
     }
 }
 
