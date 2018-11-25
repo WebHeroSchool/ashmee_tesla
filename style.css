@@ -1,6 +1,6 @@
 .header {
     height: 51px;
-    min-width: 377px;
+    min-width: 320px;
     max-width: 1340px;
     align-items: center;
     justify-content: space-around;
@@ -59,11 +59,14 @@
     text-align: center;
 }
 
-
 @media screen and (max-width: 768px) {
+    body {
+        margin: 0;
+    }
+
     .header {
-        min-width: 330px;
-        max-width: 100%;
+        max-width: 98%;
+
     }
 
     .menu__link--side {
@@ -72,6 +75,8 @@
 
     .menu__link--side-mobile {
         display: inline;
+        position: relative;
+        right: 20px;
     }
 
     .header__menu {
@@ -81,7 +86,7 @@
 
 .section-main {
     font-family: Montserrat, serif;
-    min-width: 376px;
+    min-width: 360px;
     max-width: 1440px;
     display: flex;
     flex-direction: column;
@@ -110,14 +115,16 @@
 }
 
 .section-main__image {
-    margin: -9% auto 1px;
+    margin: 2% auto;
     max-width: 100%;
 }
 
 .specifications {
     display: flex;
     margin-top: 2%;
-    margin-left: 20%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
     margin-bottom: 3%;
     min-width: 377px;
     max-width: 60%;
@@ -125,7 +132,6 @@
     justify-content: space-around;
     align-content: center;
     flex-wrap: wrap;
-
 }
 
 .specifications__image--speed {
@@ -158,12 +164,6 @@
     margin: 10px 4px 0 0;
 }
 
-.specifications__image--steering {
-    position: relative;
-    top: 5px;
-    margin-right: 5px;
-}
-
 .specifications__description {
     padding-left: 15%;
     font-weight: normal;
@@ -190,16 +190,18 @@
     align-self: center;
 }
 
-.specifications__button-test:hover button {
-    color: red;
+.specifications__image--steering {
+    position: relative;
+    top: 5px;
+    margin-right: 5px;
 }
 
-/*.specifications__button-test:hover svg .specifications__image--steering {*/
-    /*content: url('images/steering_wheel-red.svg');*/
-/*}*/
+.specifications__button-test .button:hover {
+    color: #E51937;
+}
 
-.specifications__button-test:hover button svg {
-    color: red;
+.button:hover .steering_path {
+    fill: #E51937;
 }
 
 .button:hover svg #knowmore-circle {
@@ -209,9 +211,6 @@
 .button--transparent:hover svg #knowmore-path {
     fill: #E51937;
 }
-
-
-
 
 .specifications__button-order {
     width: 160px;
@@ -232,26 +231,20 @@
     .section-main__title {
         line-height: 110px;
         font-size: 61px;
+        height: 90px;
     }
 
     .section-main__text {
         line-height: 10px;
         font-size: 12px;
-        margin: -5% auto;
-    }
-
-    .section-main__image {
-        margin: 0 auto 1px;
+        margin: 0 auto 55px auto;
     }
 
     .specifications {
-        display: flex;
-        margin: -2% 5% 60px;
+        margin: 0 0 60px;
         padding: 5% 0;
         min-width: 340px;
         max-width: 100%;
-        justify-content: center;
-        align-content: center;
         flex-wrap: wrap;
     }
 
@@ -263,7 +256,7 @@
         width: 46px;
         height: 35px;
         float: left;
-        margin: 8px 6px 0 -5px;
+        margin: 8px 6px 0 0;
     }
 
     .specifications__integer {
@@ -277,7 +270,7 @@
     .specifications__image--Road_icon {
         width: 25px;
         height: 41px;
-        margin: 10px 5px 0 -5px;
+        margin: 10px 5px 0 0;
     }
 
     .specifications__description {
@@ -354,7 +347,7 @@
 
 .specifications__image--screen {
     float: left;
-    margin: -1% 4% 1% 0;
+    margin: 0 4% 1% 0;
 }
 
 .specifications__image--wifi {
@@ -364,13 +357,12 @@
 
 .specifications__image--bag {
     float: left;
-    margin: -1% 4% 1% 0;
+    margin: 0 4% 1% 0;
 }
 
 .section-middle__buttons {
     margin: 20% 0 0 0;
 }
-
 
 .button--transparent {
     color: #FFFFFF;
@@ -405,7 +397,7 @@
 
 @media screen and (max-width: 768px) {
     .section-middle {
-        min-width: 376px;
+        min-width: 360px;
         max-width: 767px;
         min-height: 600px;
         max-height: 900px;
@@ -481,6 +473,7 @@
 .section-last__title {
     font-weight: 600;
     font-size: 30px;
+    max-width: 330px;
 }
 
 .section-last__title--mobile {
@@ -528,10 +521,6 @@
     float: left;
     margin-top: 2%;
     margin-right: 5%;
-}
-
-.section-last__security--main {
-    margin-bottom: -2%;
 }
 
 .section-last__security--additional {
@@ -583,34 +572,38 @@
 
 @media screen and (max-width: 768px) {
     .section-last {
-        min-width: 350px;
-        max-width: 750px;
-        min-height: 400px;
+        min-width: 320px;
+        max-width: 95%;
+        min-height: 350px;
         max-height: 900px;
         flex-direction: column;
         background-image: none;
+        margin: 0;
     }
 
     .section-last__block {
-        max-width: 440px;
-        min-width: 95%;
+        min-width: 320px;
+        max-width: 100%;
         align-items: center;
         display: flex;
         order: 1;
     }
 
-    .section-last__title {
+    .section-last__title--mobile {
+        max-width: 330px;
         font-weight: 600;
         font-size: 30px;
+        display: flex;
     }
 
     .section-last__text {
-        padding-right: 8%;
+        display: flex;
+        max-width: 100%;
         text-align: left;
         font-weight: 500;
         font-size: 15px;
-        margin: 0 0 5% 0;
-        padding-left: 4%;
+        margin: 0 auto 10% auto;
+
     }
 
     .section-last__specifications-wrapper,
@@ -619,12 +612,6 @@
     .section-last__title,
     .footer {
         display: none;
-    }
-
-    .section-last__title--mobile {
-        display: block;
-        font-weight: 600;
-        font-size: 30px;
     }
 
     .section-last__wrapper {
@@ -636,7 +623,7 @@
         max-width: 600px;
         max-height: 260px;
         min-height: 200px;
-        width: 101%;
+        width: 100%;
         margin: 6% 0 -20% 0;
     }
 
