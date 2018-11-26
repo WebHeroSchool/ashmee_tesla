@@ -569,19 +569,19 @@
 
 
 
-@media screen and (max-width: 1300px) {
-    .section-last__car-frame {
-        margin: 30% 0 0 10%;
-    }
+/*@media screen and (max-width: 1200px) {*/
+    /*.section-last__car-frame {*/
+        /*margin: 30% 0 0 10%;*/
+    /*}*/
 
-    .section-last {
-        display: flex;
-    }
+    /*.section-last {*/
+        /*display: flex;*/
+    /*}*/
 
-    .section-last__car-frame {
-        width: 120%;
-    }
-}
+    /*.section-last__car-frame {*/
+        /*width: 120%;*/
+    /*}*/
+/*}*/
 
 @media screen and (max-width: 768px) {
     .section-last {
@@ -649,7 +649,7 @@
 
 @media screen and (max-width: 500px) {
     .section-last__car-frame {
-        margin: 20% 0 0 0;
+        margin: 30% 0 0 3%;
         width: 100%;
     }
 
