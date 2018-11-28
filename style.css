@@ -1,6 +1,6 @@
 .header {
     height: 51px;
-    min-width: 320px;
+    min-width: 300px;
     max-width: 1340px;
     align-items: center;
     justify-content: space-around;
@@ -86,7 +86,7 @@
 
 .section-main {
     font-family: Montserrat, serif;
-    min-width: 360px;
+    min-width: 300px;
     max-width: 1440px;
     display: flex;
     flex-direction: column;
@@ -126,7 +126,7 @@
     left: 50%;
     transform: translateX(-50%);
     margin-bottom: 3%;
-    min-width: 377px;
+    min-width: 300px;
     max-width: 60%;
     width: 60%;
     justify-content: space-around;
@@ -243,7 +243,7 @@
     .specifications {
         margin: 0 0 60px;
         padding: 5% 0;
-        min-width: 340px;
+        min-width: 300px;
         max-width: 100%;
         flex-wrap: wrap;
 
@@ -292,7 +292,7 @@
 
 .section-middle {
     font-family: Montserrat, serif;
-    min-width: 376px;
+    min-width: 300px;
     max-width: 1440px;
     min-height: 800px;
     max-height: 900px;
@@ -345,7 +345,7 @@
 }
 
 .section-middle__specifications {
-    min-width: 340px;
+    min-width: 300px;
     max-width: 60%;
     margin: 0 0 7% 5%;
     line-height: 18px;
@@ -403,7 +403,7 @@
 
 @media screen and (max-width: 768px) {
     .section-middle {
-        min-width: 360px;
+        min-width: 300px;
         max-width: 767px;
         min-height: 600px;
         max-height: 900px;
@@ -451,7 +451,7 @@
 
 .section-last {
     font-family: Montserrat, serif;
-    min-width: 376px;
+    min-width: 300px;
     max-width: 1440px;
     min-height: 800px;
     max-height: 900px;
@@ -465,7 +465,7 @@
 
 .section-last__block {
     max-width: 440px;
-    min-width: 340px;
+    min-width: 300px;
     width: 100%;
     max-height: 100%;
     background-color: #E51937;
@@ -583,7 +583,7 @@
 
 @media screen and (max-width: 768px) {
     .section-last {
-        min-width: 320px;
+        min-width: 300px;
         max-width: 95%;
         min-height: 350px;
         max-height: 900px;
@@ -593,7 +593,7 @@
     }
 
     .section-last__block {
-        min-width: 320px;
+        min-width: 300px;
         max-width: 100%;
         align-items: center;
         display: flex;
