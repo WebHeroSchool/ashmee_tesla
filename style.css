@@ -534,15 +534,18 @@
 }
 
 .section-last__car-frame {
-    max-width: 1067px;
+    /*max-width: 1067px;*/
     max-height: 651px;
     min-height: 250px;
-    width: 100%;
+    width: 75%;
     height: auto;
     z-index: 2;
-    position: relative;
-    top: 100px;
-    right: 60px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-110px, -50%);
+    /*position: relative;*/
+    /*top: 100px;*/
+    /*right: 60px;*/
 }
 
 .footer {
@@ -567,21 +570,16 @@
     height: 22px;
 }
 
+@media screen and (max-width: 500px) {
+    .section-last__car-frame {
+        margin: 30% 0 0 3%;
+        width: 100%;
+    }
 
-
-/*@media screen and (max-width: 1200px) {*/
-    /*.section-last__car-frame {*/
-        /*margin: 30% 0 0 10%;*/
-    /*}*/
-
-    /*.section-last {*/
-        /*display: flex;*/
-    /*}*/
-
-    /*.section-last__car-frame {*/
-        /*width: 120%;*/
-    /*}*/
-/*}*/
+    .section-last {
+        display: flex;
+    }
+}
 
 @media screen and (max-width: 768px) {
     .section-last {
@@ -634,7 +632,7 @@
 
     .section-last__car-frame {
         display: block;
-        max-width: 800px;
+        max-width: 767px;
         max-height: 420px;
         min-height: 204px;
         width: 100%;
@@ -643,21 +641,11 @@
         top: auto;
         right: auto;
         margin: 24% auto;
+        transform: none;
+        position: relative;
+        /*top: 100px;*/
+        /*right: 60px;*/
     }
 }
-
-
-@media screen and (max-width: 500px) {
-    .section-last__car-frame {
-        margin: 30% 0 0 3%;
-        width: 100%;
-    }
-
-    .section-last {
-        display: flex;
-    }
-}
-
-
 
 
