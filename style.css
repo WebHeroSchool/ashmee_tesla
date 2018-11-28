@@ -1,6 +1,6 @@
 .header {
     height: 51px;
-    min-width: 377px;
+    min-width: 300px;
     max-width: 1340px;
     align-items: center;
     justify-content: space-around;
@@ -59,14 +59,14 @@
     text-align: center;
 }
 
-.menu__image {
-
-}
-
 @media screen and (max-width: 768px) {
+    body {
+        margin: 0;
+    }
+
     .header {
-        min-width: 330px;
-        max-width: 100%;
+        max-width: 98%;
+
     }
 
     .menu__link--side {
@@ -75,6 +75,8 @@
 
     .menu__link--side-mobile {
         display: inline;
+        position: relative;
+        right: 20px;
     }
 
     .header__menu {
@@ -84,7 +86,7 @@
 
 .section-main {
     font-family: Montserrat, serif;
-    min-width: 376px;
+    min-width: 300px;
     max-width: 1440px;
     display: flex;
     flex-direction: column;
@@ -94,12 +96,13 @@
 }
 
 .section-main__title {
+    height: 105px;
     text-align: center;
     font-weight: 600;
     line-height: normal;
     font-size: 90px;
     color: #000000;
-    margin: -5px auto -1%;
+    margin: 0 auto 0;
 }
 
 .section-main__text {
@@ -108,40 +111,40 @@
     font-size: 15px;
     line-height: 12px;
     color: #000000;
-    margin: 0 auto;
+    margin: 0 auto 1% auto;
 }
 
 .section-main__image {
-    margin: -9% auto 1px;
+    margin: 2% auto;
     max-width: 100%;
 }
 
 .specifications {
     display: flex;
-    margin: -2% 22% 60px 22%;
-    padding: 5% 0;
-    min-width: 377px;
-    max-width: 100%;
+    margin-top: 2%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 3%;
+    min-width: 300px;
+    max-width: 60%;
+    width: 60%;
     justify-content: space-around;
     align-content: center;
     flex-wrap: wrap;
-}
-
-.specifications__speed {
-    width: 150px;
 }
 
 .specifications__image--speed {
     width: 46px;
     height: 35px;
     float: left;
-    margin: 10px 5px 0 0;
+    margin: 13px 7px 0 0;
 }
 
 .specifications__integer {
     font-weight: 600;
     font-size: 35px;
-    margin: 2px 0 0;
+    margin: 2px 0 0 0;
 }
 
 .specifications__measure {
@@ -149,22 +152,16 @@
     font-size: 20px;
 }
 
-.specifications__road {
+.specifications__block {
     width: 150px;
+    margin: 0 2px 0 0;
 }
 
 .specifications__image--Road_icon {
     width: 30px;
     height: 50px;
     float: left;
-    margin: 10px 0 0 0;
-}
-
-.specifications__image--steering {
-    width: 22px;
-    height: 22px;
-    float: left;
-    margin: 5px -30px 0 0;
+    margin: 10px 4px 0 0;
 }
 
 .specifications__description {
@@ -183,19 +180,36 @@
     cursor: pointer;
     overflow: hidden;
     outline: none;
+    align-self: center;
 }
 
 .specifications__button-test {
-    padding: 13px 0 0 0;
+    padding: 0;
+    margin: 0;
     width: 160px;
+    align-self: center;
 }
 
-.specifications__button-test:hover button {
-    color: red;
+.specifications__image--steering {
+    position: relative;
+    top: 5px;
+    margin-right: 5px;
 }
 
-.specifications__button-test:hover .specifications__image--steering {
-    content: url('images/steering_wheel-red.svg');
+.specifications__button-test .button:hover {
+    color: #E51937;
+}
+
+.button:hover .steering_path {
+    fill: #E51937;
+}
+
+.button:hover svg #knowmore-circle {
+    fill: white;
+}
+
+.button--transparent:hover svg #knowmore-path {
+    fill: #E51937;
 }
 
 .specifications__button-order {
@@ -213,46 +227,42 @@
     color: white;
 }
 
-.button--transparent {
-
-}
-
 @media screen and (max-width: 668px) {
     .section-main__title {
         line-height: 110px;
         font-size: 61px;
+        height: 90px;
     }
 
     .section-main__text {
         line-height: 10px;
         font-size: 12px;
-        margin: -5% auto;
-    }
-
-    .section-main__image {
-    margin: 0 auto 1px;
+        margin: 0 auto 55px auto;
     }
 
     .specifications {
-        display: flex;
-        margin: -2% 5% 60px;
+        margin: 0 0 60px;
         padding: 5% 0;
-        min-width: 340px;
+        min-width: 300px;
         max-width: 100%;
-        justify-content: center;
-        align-content: center;
         flex-wrap: wrap;
+
     }
 
-    .specifications__speed {
+    .button {
+        padding: 0;
         width: 150px;
+    }
+
+    .specifications__block {
+        margin: 0 0 0 20px;
     }
 
     .specifications__image--speed {
         width: 46px;
         height: 35px;
         float: left;
-        margin: 8px 6px 0 -5px;
+        margin: 8px 6px 0 0;
     }
 
     .specifications__integer {
@@ -263,21 +273,10 @@
         font-size: 15px;
     }
 
-    .specifications__road {
-        width: 150px;
-    }
-
     .specifications__image--Road_icon {
         width: 25px;
         height: 41px;
-        margin: 10px 5px 0 -5px;
-    }
-
-    .specifications__image--steering {
-        width: 22px;
-        height: 22px;
-        float: left;
-        margin: 7px -30px 0 7px;
+        margin: 10px 5px 0 0;
     }
 
     .specifications__description {
@@ -285,7 +284,368 @@
         font-weight: normal;
         font-size: 10px;
     }
+}
 
+.scroll-bottom {
+    text-align: center;
+}
+
+.section-middle {
+    font-family: Montserrat, serif;
+    min-width: 300px;
+    max-width: 1440px;
+    min-height: 800px;
+    max-height: 900px;
+    display: flex;
+    flex-direction: row;
+    margin: 3% auto 0 auto;
+    font-style: normal;
+    line-height: normal;
+    background-size: 88%;
+    /* свернул всё в background
+    background-image: url('images/Tesla__middle.png');
+    background-repeat: no-repeat;
+    background-position: bottom left; */
+    background: url('images/Tesla__middle.png') no-repeat bottom left;
+}
+
+.section-middle__mobile {
+    display: none;
+}
+
+.section-middle__title-primary {
+    font-weight: 600;
+    font-size: 70px;
+    color: #E51937;
+    margin: 2% auto 0 6%;
+}
+
+.section-middle__block {
+    width: 440px;
+    max-height: 100%;
+    background-color: #E51937;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-middle__title-secondary {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.section-middle__text {
+    padding-left: 15%;
+    padding-right: 8%;
+    text-align: left;
+    font-weight: 500;
+    font-size: 15px;
+    margin: 0 0 15% 0;
+}
+
+.section-middle__specifications {
+    min-width: 300px;
+    max-width: 60%;
+    margin: 0 0 7% 5%;
+    line-height: 18px;
+}
+
+.specifications__image--screen {
+    float: left;
+    margin: 0 4% 1% 0;
+}
+
+.specifications__image--wifi {
+    float: left;
+    margin: 1% 4% 1% 0;
+}
+
+.specifications__image--bag {
+    float: left;
+    margin: 0 4% 1% 0;
+}
+
+.section-middle__buttons {
+    margin: 20% 0 0 0;
+}
+
+.button--transparent {
+    color: #FFFFFF;
+    margin: auto 10px 0;
+    align-self: flex-end;
+}
+
+.svg-knowmore {
+    position: relative;
+    top: 6px;
+    margin-right: 5px;
+}
+
+.button--transparent:hover svg #knowmore-circle {
+    fill: white;
+}
+
+.button--transparent:hover svg #knowmore-path {
+    fill: #E51937;
+}
+
+.button--red {
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    margin: auto 8px 0;
+}
+
+.button--red:hover {
+    background-color: #FFFFFF;
+    color: #E51937;
+}
+
+@media screen and (max-width: 768px) {
+    .section-middle {
+        min-width: 300px;
+        max-width: 767px;
+        min-height: 600px;
+        max-height: 900px;
+        flex-direction: column;
+        background-image: none;
+    }
+
+    .section-middle__title-primary,
+    .section-middle__buttons,
+    .section-middle__specifications {
+        display: none;
+    }
+
+    .section-middle__mobile {
+        display: flex;
+        width: 100%;
+        min-height: 325px;
+        max-height: 100%;
+        background-image: url('images/Tesla__middle.png');
+        background-repeat: no-repeat;
+        background-size: 125%;
+        background-position: bottom;
+    }
+
+    .section-middle__block {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-middle__title-secondary {
+        padding-left: 2%;
+    }
+
+    .section-middle__text {
+        min-height: 206px;
+        max-height: 350px;
+        padding-left: 8%;
+        padding-right: 13%;
+        margin: 0 0 10% 0;
+    }
+
+}
+
+.section-last {
+    font-family: Montserrat, serif;
+    min-width: 300px;
+    max-width: 1440px;
+    min-height: 800px;
+    max-height: 900px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    font-style: normal;
+    line-height: normal;
+    position: relative;
+}
+
+.section-last__block {
+    max-width: 440px;
+    min-width: 300px;
+    width: 100%;
+    max-height: 100%;
+    background-color: #E51937;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 0 0 5%;
+}
+
+.section-last__title {
+    font-weight: 600;
+    font-size: 30px;
+    max-width: 330px;
+}
+
+.section-last__title--mobile {
+    display: none;
+}
+
+.section-last__specifications-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 17px;
+    margin-bottom: 15%;
+}
+
+.section-last__text {
+    padding-right: 8%;
+    text-align: left;
+    font-weight: 500;
+    font-size: 15px;
+    margin: 0 0 5% 0;
+}
+
+.section-last__specifications--additional {
+    font-size: 10px;
+    opacity: 0.7;
+}
+
+.section-last__stars {
+    float: right;
+    align-items: flex-end;
+}
+
+.section-last__security {
+    font-weight: 600;
+    line-height: normal;
+    font-size: 50px;
+    width: 80%;
+    margin-bottom: 15%;
+    margin-left: 5%;
+}
+
+.section-last__shield {
+    float: left;
+    margin-top: 2%;
+    margin-right: 5%;
+}
+
+.section-last__security--additional {
+    font-size: 25px;
+}
+
+.section-last__car-frame {
+    /*max-width: 1067px;*/
+    max-height: 651px;
+    min-height: 250px;
+    width: 75%;
+    height: auto;
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    transform: translate(-110px, -50%);
+    /*position: relative;*/
+    /*top: 100px;*/
+    /*right: 60px;*/
+}
+
+.footer {
+    display: block;
+    width: 160px;
+    height: 22px;
+    font-family: Montserrat, serif;
+    font-style: normal;
+    color: #000000;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 8px;
+    vertical-align: middle;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.copyright {
+    float: right;
+    width: 82px;
+    height: 22px;
+}
+
+@media screen and (max-width: 500px) {
+    .section-last__car-frame {
+        margin: 30% 0 0 3%;
+        width: 100%;
+    }
+
+    .section-last {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section-last {
+        min-width: 300px;
+        max-width: 95%;
+        min-height: 350px;
+        max-height: 900px;
+        flex-direction: column;
+        background-image: none;
+        margin: 0;
+    }
+
+    .section-last__block {
+        min-width: 300px;
+        max-width: 100%;
+        align-items: center;
+        display: flex;
+        order: 1;
+    }
+
+    .section-last__title--mobile {
+        max-width: 330px;
+        font-weight: 600;
+        font-size: 30px;
+        display: flex;
+    }
+
+    .section-last__text {
+        display: flex;
+        max-width: 100%;
+        text-align: left;
+        font-weight: 500;
+        font-size: 15px;
+        margin: 0 auto 10% auto;
+
+    }
+
+    .section-last__specifications-wrapper,
+    .section-last__security,
+    .section-last__buttons,
+    .section-last__title,
+    .footer {
+        display: none;
+    }
+
+    .section-last__wrapper {
+        max-height: 700px;
+        min-height: 400px;
+    }
+
+    .section-last__car-frame {
+        display: block;
+        max-width: 767px;
+        max-height: 420px;
+        min-height: 204px;
+        width: 100%;
+        height: auto;
+        z-index: 2;
+        top: auto;
+        right: auto;
+        margin: 24% auto;
+        transform: none;
+        position: relative;
+        /*top: 100px;*/
+        /*right: 60px;*/
+    }
 }
 
 
